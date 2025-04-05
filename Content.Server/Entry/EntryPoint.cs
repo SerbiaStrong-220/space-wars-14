@@ -39,6 +39,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.SS220.BackEndApi;
+using Content.Server.SS220.SpaceWars.Party;
 
 namespace Content.Server.Entry
 {
@@ -125,6 +126,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<DiscordBanPostManager>().Initialize(); // SS220 discord ban post manager
                 IoCManager.Resolve<ServerControlController>().Initialize(); // SS220 Backend-Api
                 IoCManager.Resolve<ServerApi>().Initialize();
+                IoCManager.Resolve<IPartyManager>().Initialize();
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

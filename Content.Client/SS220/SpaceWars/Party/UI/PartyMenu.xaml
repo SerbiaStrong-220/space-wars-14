@@ -1,0 +1,8 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:tabs="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.Tabs"
+               Title="{Loc 'ui-options-title'}"
+               MinSize="800 450">
+    <TabContainer Name="Tabs" Access="Public">
+        <tabs:MainTab Name="MainTab"/>
+    </TabContainer>
+</DefaultWindow>
