@@ -1,0 +1,15 @@
+<tabs:MainTab xmlns="https://spacestation14.io"
+              xmlns:tabs="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.Tabs">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Orientation="Horizontal">
+            <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
+                <BoxContainer Name="MembersContainer" Orientation="Vertical" Margin="4 4 4 4">
+                </BoxContainer>
+            </ScrollContainer>
+            <BoxContainer Name="ChatBox" MinSize="200 200">
+            </BoxContainer>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal" Name="ButtonContainer" MinSize="40 40">
+        </BoxContainer>
+    </BoxContainer>
+</tabs:MainTab>
