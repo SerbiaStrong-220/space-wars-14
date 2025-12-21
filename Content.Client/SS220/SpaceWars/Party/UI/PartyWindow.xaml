@@ -1,0 +1,10 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:tabs="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.Tabs"
+               Title="{Loc 'ui-paty-window-title'}"
+               MinSize="600 300"
+               SetSize="700 300">
+    <TabContainer Name="Tabs" Access="Public">
+        <tabs:PartyMainTab  Name="MainTab" VerticalExpand="True" Access="Public"/>
+        <tabs:ReceivedPartyInvitesTab Name="ReceivedInvitesTab" VerticalExpand="True" Access="Public"/>
+    </TabContainer>
+</DefaultWindow>

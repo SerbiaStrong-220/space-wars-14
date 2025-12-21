@@ -41,6 +41,7 @@
     - saveconfig
     - chatwindow
     - ttsqueuereset
+    - party:window # SS220_SpaceWars party
 
 - Flags: DEBUG
   Commands:

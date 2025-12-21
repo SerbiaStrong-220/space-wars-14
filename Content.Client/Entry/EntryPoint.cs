@@ -45,6 +45,7 @@ using Content.Client.SS220.Discord;
 using Robust.Shared.Timing;
 using Content.Client.SS220.TTS;
 using Content.Client.SS220.Species;
+using Content.Client.SS220.SpaceWars.Party;
 
 namespace Content.Client.Entry
 {
@@ -89,6 +90,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
         [Dependency] private readonly ClientsidePlaytimeTrackingManager _clientsidePlaytimeManager = default!;
         [Dependency] private readonly SpeciesRequirementsManager _speciesRequirements = default!; // SS220 Species bans
+        [Dependency] private readonly IPartyManager _partyManager = default!; // SS220_SpaceWars Party
 
         public override void PreInit()
         {
@@ -192,6 +194,7 @@ namespace Content.Client.Entry
             _discordPlayerInfoManager.Initialize(); // SS220 tier info
             _titleWindowManager.Initialize();
             _ttsManager.Initialize(); // SS220 TTS
+            _partyManager.Initialize(); // SS220_SpaceWars Party
 
             _baseClient.RunLevelChanged += (_, args) =>
             {

@@ -1,0 +1,11 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               Title="{Loc ui-quick-confirmation-window-title}"
+               MinSize="400 140">
+    <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+        <RichTextLabel Name="MessageLabel" VerticalExpand="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 5" Access="Public" />
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="ConfirmButton" Text="{Loc ui-quick-confirmation-window-confirm-button}" />
+            <Button Name="CancelButton" Text="{Loc ui-quick-confirmation-window-cansel-button}" />
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>

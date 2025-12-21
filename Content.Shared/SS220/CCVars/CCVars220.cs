@@ -133,4 +133,12 @@ public sealed partial class CCVars220
     /// </summary>
     public static readonly CVarDef<string> AdditionalBanInfo =
         CVarDef.Create("ban.additional_info", "", CVar.SERVERONLY | CVar.ARCHIVE);
+
+    #region Party
+    public static readonly CVarDef<int> PartyMembersLimit =
+        CVarDef.Create("party.members_limit", 10, CVar.SERVER);
+
+    public static readonly CVarDef<int> PartyInvitesLimit =
+        CVarDef.Create("party.invites_limit", 5, CVar.SERVER | CVar.REPLICATED);
+    #endregion
 }

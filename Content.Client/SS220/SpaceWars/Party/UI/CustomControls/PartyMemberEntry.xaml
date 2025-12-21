@@ -1,0 +1,16 @@
+<PanelContainer xmlns="https://spacestation14.io" MinSize="200 50">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Name="TopBox" Orientation="Horizontal" VerticalExpand="True">
+            <Label Name="UsernameLabel" Align="Left" HorizontalExpand="True" Margin="5 0"/>
+            <PanelContainer Name="PartyRolePanel">
+                <Label Name="PartyRoleLabel" Align="Right" Margin="5 0"/>
+            </PanelContainer>
+        </BoxContainer>
+        <BoxContainer Name="BottomBox" Orientation="Horizontal" VerticalExpand="True" Access="Public" Margin="0 2 0 0">
+            <TextureRect Name="ConnectionStatusIcon" HorizontalAlignment="Center" VerticalAlignment="Center" StyleClasses="Circle" Margin="5 0 0 0"/>
+            <Label Name="ConnectionStatusLabel" Align="Left" HorizontalExpand="True" Margin="5 0 2 0"/>
+            <TextureButton Name="SetHostButton" SetSize="25 25" VerticalAlignment="Center" Margin="0 0 5 0"/>
+            <TextureButton Name="KickButton" SetSize="25 25" StyleClasses="windowCloseButton" VerticalAlignment="Center" Margin="0 0 2 0"/>
+        </BoxContainer>
+    </BoxContainer>
+</PanelContainer>

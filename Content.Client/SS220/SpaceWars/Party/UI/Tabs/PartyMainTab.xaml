@@ -1,0 +1,34 @@
+<tabs:PartyMainTab xmlns="https://spacestation14.io"
+              xmlns:tabs="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.Tabs"
+              xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+              xmlns:ut="clr-namespace:Content.Client.SS220.UserInterface.Utility"
+              MinSize="550 200">
+    <BoxContainer Orientation="Vertical">
+        <Control VerticalExpand="True" Margin="0 0 0 5">
+            <BoxContainer Orientation="Horizontal" VerticalExpand="True">
+                <PanelContainer Name="MembersPanel" Margin="5 5 5 0" MinSize="280 150">
+                    <BoxContainer Orientation="Vertical" VerticalExpand="True">
+                        <ScrollContainer HScrollEnabled="False" VerticalExpand="True">
+                            <BoxContainer Name="MembersContainer" Orientation="Vertical"/>
+                        </ScrollContainer>
+                        <RichTextLabel Name="MaxMembersLabel" Margin="5"/>
+                    </BoxContainer>
+                </PanelContainer>
+                <PanelContainer Name="ChatPanel" HorizontalExpand="True" Margin="5 5 5 0" MinSize="200 150">
+                    <ScrollContainer HScrollEnabled="False" VerticalExpand="True">
+                        <BoxContainer Name="ChatBox" Orientation="Vertical"/>
+                    </ScrollContainer>
+                </PanelContainer>
+            </BoxContainer>
+            <PanelContainer Name="NotMemberOverlay" MouseFilter="Stop"/>
+            <RichTextLabel Name="NotMemberLabel" Text="{Loc 'ui-party-main-tab-not-member-lable'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Control>
+        <BoxContainer Orientation="Horizontal" Name="ButtonContainer" MinSize="20 20" Margin="5 0 0 0">
+            <Button Name="CreatePartyButton" Text="{Loc 'ui-party-main-tab-create-party-button'}"/>
+            <ut:ConfirmableButton Name="LeavePartyButton" ClicksForConfirm="2"/>
+            <ut:ConfirmableButton Name="DisbandPartyButton" ClicksForConfirm="2" StyleClasses="OpenBoth"/>
+            <Button Name="PartyInvitesButton" Text="{Loc 'ui-party-main-tab-local-party-invites-button'}" StyleClasses="OpenBoth"/>
+            <Button Name="PartySettingsButton" Text="{Loc 'ui-party-main-tab-settings-button'}" StyleClasses="OpenLeft"/>
+        </BoxContainer>
+    </BoxContainer>
+</tabs:PartyMainTab>

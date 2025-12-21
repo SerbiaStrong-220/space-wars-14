@@ -1,0 +1,13 @@
+<tabs:ReceivedPartyInvitesTab xmlns="https://spacestation14.io"
+                         xmlns:tabs="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.Tabs"
+                         MinSize="300 160">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+        <Label Name="InvitesCountLabel" Margin="5 0 0 0" HorizontalExpand="True"/>
+        <PanelContainer Name="InvitesPanel" Margin="5 5 5 5" VerticalExpand="True">
+            <ScrollContainer>
+                <BoxContainer Name="InvitesContainer" Orientation="Vertical" MinSize="160 50"/>
+            </ScrollContainer>
+        </PanelContainer>
+        <CheckBox Name="ReceiveInvitesCheckbox"  Text="{Loc ui-received-invites-tab-invites-receive-invites-checkbox}" Pressed="True" Margin="5 0 0 5" />
+    </BoxContainer>
+</tabs:ReceivedPartyInvitesTab>

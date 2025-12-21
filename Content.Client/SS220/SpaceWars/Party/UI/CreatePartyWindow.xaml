@@ -1,0 +1,12 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:control="clr-namespace:Content.Client.SS220.SpaceWars.Party.UI.CustomControls"
+               Title="{Loc ui-create-party-window-title}"
+               MinSize="400 100">
+    <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+        <control:PartySettingsPanel Name="SettingsPanel" VerticalExpand="True"/>
+        <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="CreateButton" Text="{Loc ui-create-party-window-create-button}" Access="Public"/>
+            <Button Name="CancelButton" Text="{Loc ui-create-party-window-cancel-button}" Access="Public"/>
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>

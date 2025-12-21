@@ -40,6 +40,7 @@ using Robust.Shared.Utility;
 using Content.Server.SS220.BackEndApi;
 using Content.Shared.SS220.CCVars;
 using Content.Server.SS220.Wiki.Generators;
+using Content.Server.SS220.SpaceWars.Party;
 
 namespace Content.Server.Entry
 {
@@ -93,6 +94,9 @@ namespace Content.Server.Entry
         [Dependency] private readonly DiscordBanPostManager _discordBanPostManager = default!; // SS220 discord ban post manager
         [Dependency] private readonly ServerControlController _serverControlController = default!; // SS220 Backend-Api
         // SS220-entry-point-edit-begin
+        // SS220_SpaceWars-entry-point-edit-begin
+        [Dependency] private readonly IPartyManager _partyManager = default!;
+        // SS220_SpaceWars-entry-point-edit-end
 
         public override void PreInit()
         {
@@ -142,6 +146,7 @@ namespace Content.Server.Entry
             _discordPlayerManager.Initialize(); // SS220 discord player manager
             _discordBanPostManager.Initialize(); // SS220 discord ban post manager
             _serverControlController.Initialize(); // SS220 Backend-Api
+            _partyManager.Initialize(); // SS220_SpaceWars Party
 
             _adminLog.Initialize();
             _connection.Initialize();

@@ -36,6 +36,7 @@ using Content.Shared.IoC;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Content.Server.SS220.SpaceWars.Party;
 
 namespace Content.Server.IoC;
 
@@ -93,5 +94,6 @@ internal static class ServerContentIoC
         deps.Register<DiscordPlayerManager>(); // SiS220 discord player manager
         deps.Register<DiscordBanPostManager>();  // SS220 dscord ban post manager
         deps.Register<ServerControlController>(); // SS220
+        deps.Register<IPartyManager, PartyManager>(); // SS220_SpaceWars Party
     }
 }

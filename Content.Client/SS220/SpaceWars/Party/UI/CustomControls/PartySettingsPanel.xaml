@@ -1,0 +1,9 @@
+<PanelContainer xmlns="https://spacestation14.io"
+                MinSize="350 50">
+    <BoxContainer Name="SettingsBox"  Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+        <BoxContainer Name="MembersLimitContainer" Orientation="Horizontal" HorizontalExpand="True">
+            <RichTextLabel Name="MembersLimitLabel" MinWidth="300" Text="{Loc 'ui-party-settings-panel-members-limit'}"/>
+            <LineEdit Name="MembersLimitLineEdit" HorizontalExpand="True" Margin="10 0 0 0" />
+        </BoxContainer>
+    </BoxContainer>
+</PanelContainer>

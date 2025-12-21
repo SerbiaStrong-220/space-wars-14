@@ -719,3 +719,9 @@ binds:
   key: P
   mod1: Alt
 # SS220 add pinnable ui func end
+# SS220_SpaceWars party begin
+- function: TogglePartyWindow
+  type: State
+  key: P
+# SS220_SpaceWars party end
+
